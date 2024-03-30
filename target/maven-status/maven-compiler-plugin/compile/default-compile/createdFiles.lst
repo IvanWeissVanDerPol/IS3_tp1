@@ -1,3 +1,4 @@
+py\com\progweb\prueba\exception\DatabaseException.class
 py\com\progweb\prueba\ejb\SampleEJB.class
 py\com\progweb\prueba\ejb\CustomerServiceEJB.class
 py\com\progweb\prueba\rest\CustomerResource.class

@@ -1,11 +1,15 @@
 package py.com.progweb.prueba.dao;
 
 import py.com.progweb.prueba.model.Customer;
-
+import py.com.progweb.prueba.exception.DatabaseException;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceException;
+
+
+
 import java.util.List;
 
 @Stateless
@@ -16,8 +20,13 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     @Override
     public void create(Customer customer) {
-        em.persist(customer);
+        try {
+            em.persist(customer);
+        } catch (PersistenceException e) {
+            throw new DatabaseException("Failed to create customer", e);
+        }
     }
+    
 
     @Override
     public Customer update(Customer customer) {

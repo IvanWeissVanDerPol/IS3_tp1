@@ -28,14 +28,34 @@ public class CustomerResource {
     public Response createCustomer(Customer customer) {
         Customer existingCustomer = customerService.findByEmail(customer.getEmail());
         if (existingCustomer != null) {
-            // Handle the case where the customer exists, e.g., return an error message
-            return null;
+            return Response.status(Response.Status.CONFLICT).entity("Customer with email already exists.").build();
         } else {
-            customerService.createCustomer(customer);
+            // try to create the customer if it succeeds return a created status code and the customer object in the response
+            // if it fails return a descriptive error message
+            customerService.createCustomer(customer);         
+
+
+
             return Response.status(Response.Status.CREATED).entity(customer).build();
         }
 
     }
+
+    
+    @PUT
+    @Path("/{id}")
+    public Response updateCustomer(@PathParam("id") Long id, Customer customer) {
+        // Customer updatedCustomer = customerService.updateCustomer(customer);
+        // try to update the customer if it succeeds return the updated customer object in the response
+        // if it fails return a descriptive error message
+        Customer updatedCustomer = customerService.updateCustomer(customer);
+        if (updatedCustomer == null) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+        return Response.ok(updatedCustomer).build();
+        
+    }
+
 
     @GET
     public Response getAllCustomers() {
@@ -52,13 +72,6 @@ public class CustomerResource {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
         return Response.ok(customer).build();
-    }
-
-    @PUT
-    @Path("/{id}")
-    public Response updateCustomer(@PathParam("id") Long id, Customer customer) {
-        Customer updatedCustomer = customerService.updateCustomer(customer);
-        return Response.ok(updatedCustomer).build();
     }
 
     @DELETE
