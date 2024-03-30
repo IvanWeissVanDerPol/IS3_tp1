@@ -1,4 +1,5 @@
-py\com\progweb\prueba\Utilities\EmailUtility.class
-py\com\progweb\prueba\rest\CustomerService.class
-py\com\progweb\prueba\models\Customer.class
-py\com\progweb\prueba\Utilities\PointsCalculator.class
+py\com\progweb\prueba\rest\ClientResource.class
+py\com\progweb\prueba\ejb\SampleEJB.class
+py\com\progweb\prueba\cors\CorsFilter.class
+py\com\progweb\prueba\rest\ApplicationConfig.class
+py\com\progweb\prueba\rest\HelloResource.class
