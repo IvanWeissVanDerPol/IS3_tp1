@@ -1,0 +1,28 @@
+DTO
+data transfet object
+pongo lo que tiene que ver con los datos a nivel codigo temporalmente
+
+DAO
+data acces object
+pongo lo que tiene que ver con interaccion en la base de datos
+
+models
+son todas las entidades
+debe coincidir con la base de datos
+
+ejb
+es implementado en DAO
+son las llamadas que hago con mis datos de customer (DAO)
+
+rest
+son los endpoints que podemos acceder de la pagina
+
+serializer
+    para generar jsons de los datos
+
+shedule
+debe ser registrado como singleton que viva en todo el proyecto
+    verifica si los puntos fueron expirados
+
+
+
