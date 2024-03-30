@@ -1,5 +1,11 @@
-py\com\progweb\prueba\rest\ClientResource.class
 py\com\progweb\prueba\ejb\SampleEJB.class
+py\com\progweb\prueba\ejb\CustomerServiceEJB.class
+py\com\progweb\prueba\rest\CustomerResource.class
 py\com\progweb\prueba\cors\CorsFilter.class
+py\com\progweb\prueba\dao\CustomerDAO.class
 py\com\progweb\prueba\rest\ApplicationConfig.class
+py\com\progweb\prueba\rest\ClientResource.class
+py\com\progweb\prueba\rest\CustomerResource$1.class
+py\com\progweb\prueba\dao\CustomerDAOImpl.class
+py\com\progweb\prueba\model\Customer.class
 py\com\progweb\prueba\rest\HelloResource.class
