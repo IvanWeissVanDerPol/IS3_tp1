@@ -6,7 +6,8 @@ import java.util.List;
 public interface CustomerDAO {
     void create(Customer customer);
     Customer update(Customer customer);
-    void delete(Long id);
-    Customer findById(Long id);
+    void delete(Integer id);
+    Customer findById(Integer id);
+    Customer findByEmail(String email);
     List<Customer> findAll();
 }

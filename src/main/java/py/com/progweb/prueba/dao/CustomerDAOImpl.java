@@ -4,6 +4,7 @@ import py.com.progweb.prueba.model.Customer;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
@@ -24,14 +25,25 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     @Override
-    public void delete(Long id) {
+    public void delete(Integer id) {
         Customer customer = em.find(Customer.class, id);
         em.remove(customer);
     }
 
     @Override
-    public Customer findById(Long id) {
+    public Customer findById(Integer id) {
         return em.find(Customer.class, id);
+    }
+
+    @Override
+    public Customer findByEmail(String email) {
+        try {
+            return em.createQuery("SELECT c FROM Customer c WHERE c.email = :email", Customer.class)
+                    .setParameter("email", email)
+                    .getSingleResult();
+        } catch (NoResultException e) {
+            return null; // Or handle it according to your business logic
+        }
     }
 
     @Override

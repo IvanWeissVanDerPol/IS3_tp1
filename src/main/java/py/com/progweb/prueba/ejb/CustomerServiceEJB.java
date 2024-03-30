@@ -21,12 +21,16 @@ public class CustomerServiceEJB {
         return customerDAO.update(customer);
     }
 
-    public void deleteCustomer(Long id) {
+    public void deleteCustomer(Integer id) {
         customerDAO.delete(id);
     }
 
-    public Customer findCustomerById(Long id) {
+    public Customer findCustomerById(Integer id) {
         return customerDAO.findById(id);
+    }
+
+    public Customer findByEmail(String email) {
+        return customerDAO.findByEmail(email);
     }
 
     public List<Customer> listCustomers() {

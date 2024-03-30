@@ -1,5 +1,6 @@
 package py.com.progweb.prueba.rest;
 
+import py.com.progweb.prueba.dao.CustomerDAO;
 import py.com.progweb.prueba.ejb.CustomerServiceEJB;
 import py.com.progweb.prueba.model.Customer;
 
@@ -25,8 +26,15 @@ public class CustomerResource {
 
     @POST
     public Response createCustomer(Customer customer) {
-        customerService.createCustomer(customer);
-        return Response.status(Response.Status.CREATED).entity(customer).build();
+        Customer existingCustomer = customerService.findByEmail(customer.getEmail());
+        if (existingCustomer != null) {
+            // Handle the case where the customer exists, e.g., return an error message
+            return null;
+        } else {
+            customerService.createCustomer(customer);
+            return Response.status(Response.Status.CREATED).entity(customer).build();
+        }
+
     }
 
     @GET
@@ -38,7 +46,7 @@ public class CustomerResource {
 
     @GET
     @Path("/{id}")
-    public Response getCustomer(@PathParam("id") Long id) {
+    public Response getCustomer(@PathParam("id") Integer id) {
         Customer customer = customerService.findCustomerById(id);
         if (customer == null) {
             return Response.status(Response.Status.NOT_FOUND).build();
@@ -55,7 +63,7 @@ public class CustomerResource {
 
     @DELETE
     @Path("/{id}")
-    public Response deleteCustomer(@PathParam("id") Long id) {
+    public Response deleteCustomer(@PathParam("id") Integer id) {
         customerService.deleteCustomer(id);
         return Response.status(Response.Status.NO_CONTENT).build();
     }

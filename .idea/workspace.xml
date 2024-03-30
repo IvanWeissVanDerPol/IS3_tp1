@@ -10,26 +10,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="849b7c42-e914-4458-a52f-2f36a0e65193" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/CustomerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/CustomerDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/CustomerServiceEJB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/CustomerResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/CustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/CustomerDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/CustomerServiceEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/CustomerServiceEJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/CustomerResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/CustomerResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/CustomerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/CustomerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/CustomerDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/ejb/CustomerServiceEJB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/ejb/CustomerServiceEJB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/model/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/CustomerResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/CustomerResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/prueba.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/prueba.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/cors/CorsFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/CustomerDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/CustomerDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/ejb/CustomerServiceEJB.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/ejb/SampleEJB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/model/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/ApplicationConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/ClientResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/CustomerResource$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/CustomerResource.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/HelloResource.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,7 +198,7 @@
       <updated>1711762271404</updated>
       <workItem from="1711762276978" duration="1727000" />
       <workItem from="1711764042689" duration="4281000" />
-      <workItem from="1711769175766" duration="9059000" />
+      <workItem from="1711769175766" duration="13556000" />
     </task>
     <servers />
   </component>
