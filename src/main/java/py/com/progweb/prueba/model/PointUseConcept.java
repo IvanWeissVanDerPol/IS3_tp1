@@ -1,5 +1,7 @@
 package py.com.progweb.prueba.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,7 +20,8 @@ public class PointUseConcept {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "required_points")
+    @Column(name = "points_required")
+    @JsonProperty("points_required") // This annotation helps Jackson recognize the field from JSON
     private Integer requiredPoints;
 
     public PointUseConcept() {

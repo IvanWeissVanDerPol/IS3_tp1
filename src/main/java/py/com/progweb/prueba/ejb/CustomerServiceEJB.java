@@ -1,6 +1,6 @@
 package py.com.progweb.prueba.ejb;
 
-import py.com.progweb.prueba.dao.CustomerDAO;
+import py.com.progweb.prueba.dao.Customer.CustomerDAO;
 import py.com.progweb.prueba.model.Customer;
 
 import javax.ejb.Stateless;

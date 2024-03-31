@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultas del Sistema de Fidelización</title>
+    <!-- Añadir CSS para estilos -->
+</head>
+<body>
+<h1>Consultas del Sistema de Fidelización</h1>
+
+<!-- Consulta: Uso de puntos -->
+<section id="consulta-uso-puntos">
+    <h2>Uso de puntos</h2>
+    <form id="form-uso-puntos">
+        <label for="concepto">Concepto de uso:</label>
+        <input type="text" id="concepto" name="concepto"><br><br>
+
+        <label for="fecha">Fecha de uso:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <label for="cliente">Cliente:</label>
+        <input type="text" id="cliente" name="cliente"><br><br>
+
+        <button type="button" onclick="consultarUsoPuntos()">Consultar</button>
+    </form>
+    <div id="resultado-uso-puntos"></div>
+</section>
+
+<!-- Sección para otras consultas -->
+
+<script src="app.js"></script>
+</body>
+</html>

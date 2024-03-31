@@ -1,6 +1,5 @@
 package py.com.progweb.prueba.rest;
 
-import py.com.progweb.prueba.dao.CustomerDAO;
 import py.com.progweb.prueba.ejb.CustomerServiceEJB;
 import py.com.progweb.prueba.model.Customer;
 
@@ -53,7 +52,7 @@ public class CustomerResource {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
         return Response.ok(updatedCustomer).build();
-        
+
     }
 
 
