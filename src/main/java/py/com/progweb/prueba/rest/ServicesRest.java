@@ -1,11 +1,13 @@
 package py.com.progweb.prueba.rest;
 
 import py.com.progweb.prueba.ejb.CustomerService;
+import py.com.progweb.prueba.ejb.PointAllocationRuleService;
 import py.com.progweb.prueba.ejb.PointExpirationService;
 import py.com.progweb.prueba.ejb.PointUseConceptService;
 import py.com.progweb.prueba.ejb.PointWalletService;
 import py.com.progweb.prueba.ejb.PointsService;
 import py.com.progweb.prueba.model.Customer;
+import py.com.progweb.prueba.model.PointAllocationRule;
 import py.com.progweb.prueba.model.PointExpiration;
 import py.com.progweb.prueba.model.PointUseConcept;
 import py.com.progweb.prueba.model.PointWallet;
@@ -42,6 +44,9 @@ public class ServicesRest {
     @Inject
     private CustomerService customerService;
 
+    @Inject
+    private PointAllocationRuleService pointAllocationRuleService;
+
 
     @GET
     @Path("/hello")
@@ -52,7 +57,7 @@ public class ServicesRest {
 
     // MAKE A METHOD THAT RETURNS THE POINT EXPIRATION RULE THAT IS VALID FOR THE CURRENT DATE
 
-    public PointExpiration findValidRule(Date currentDate) {
+    public PointExpiration findExpirationRule(Date currentDate) {
 
         List<PointExpiration> rules = pointExpirationService.findAll();
         // find the rule that is valid for the current date
@@ -69,7 +74,7 @@ public class ServicesRest {
 
     public Date calculateExpirationDate(Date assignmentDate) {
         // get the valid point expiration rule for the current date
-        PointExpiration pointExpiration = findValidRule(assignmentDate);
+        PointExpiration pointExpiration = findExpirationRule(assignmentDate);
         if (pointExpiration == null) {
             // if no rule is found, return null
             return null;
@@ -177,6 +182,30 @@ public class ServicesRest {
     //             "Best regards,\n" +
     //             "Your Loyalty Program Team";
     // }
+
+    // consultar cuantos puntos equivale a un monto X: es un servicio informativo
+    @GET
+    @Path("/points_for_amount")
+    public Response pointsForAmount(@QueryParam("amount") Integer amount) {
+        
+        // get the rules from pointAlocationRuleService
+        Integer conversion = 0;
+        List<PointAllocationRule> rules = pointAllocationRuleService.findAll();
+        // iterate over the rules to find the one that applies to the amount given and store it as a variable
+        for (PointAllocationRule rule : rules) {
+            if (amount >= rule.getLowerLimit() && amount <= rule.getUpperLimit()) {
+                 conversion =  rule.getPointsPerUnit();
+            }
+        }
+
+        // calculate the points based on the rule and the amount given
+        Float points = (float) (amount / conversion);
+    
+        return Response.ok(points).build();
+        
+        
+        
+    }
 
 
 

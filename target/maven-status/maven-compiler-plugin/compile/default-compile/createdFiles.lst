@@ -13,6 +13,7 @@ py\com\progweb\prueba\cors\CorsFilter.class
 py\com\progweb\prueba\model\PointWallet.class
 py\com\progweb\prueba\rest\ApplicationConfig.class
 py\com\progweb\prueba\dao\PointWallet\PointWalletDAO.class
+py\com\progweb\prueba\rest\ReportsRest.class
 py\com\progweb\prueba\rest\ServicesRest.class
 py\com\progweb\prueba\model\PointsHeader.class
 py\com\progweb\prueba\model\PointsDetail.class

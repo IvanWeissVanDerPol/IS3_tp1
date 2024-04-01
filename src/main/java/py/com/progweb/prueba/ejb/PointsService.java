@@ -11,6 +11,7 @@ import py.com.progweb.prueba.model.PointsHeader;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -92,7 +93,7 @@ public class PointsService {
         Integer pointsUsed = pointsToRedeem + pointWallet.getUsedPoints();
         
         pointsDetail.setPointsHeader(pointsHeader);
-        pointsDetail.setPointsUsed(pointsToRedeem);
+        pointsDetail.setPointsUsed(pointsUsed);
         pointsDetail.setPointWallet(pointWallet);
         return pointsDetail;
     }
@@ -112,6 +113,10 @@ public class PointsService {
         pointsHeaderDAO.create(pointsHeader);
         return pointsHeader;
 
+    }
+
+    public List<PointsDetail> findPointsUsage(Integer customerId, Integer conceptId, LocalDate startDate) {
+        return pointsDetailDAO.findPointsUsage(customerId, conceptId, startDate);
     }
 
 
