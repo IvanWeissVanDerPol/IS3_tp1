@@ -9,4 +9,5 @@ public interface PointAllocationRuleDAO {
     void delete(Long id);
     PointAllocationRule findById(Long id);
     List<PointAllocationRule> findAll();
+    PointAllocationRule findRuleByTransactionAmount(Double transactionAmount);
 }

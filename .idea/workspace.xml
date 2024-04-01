@@ -10,74 +10,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="849b7c42-e914-4458-a52f-2f36a0e65193" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/FrontEnd/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/FrontEnd/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointAllocationRule/PointAllocationRuleDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointAllocationRule/PointAllocationRuleDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointExpiration/PointExpirationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointExpiration/PointExpirationDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointUseConcept/PointUseConceptDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointUseConcept/PointUseConceptDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointWallet/PointWalletDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointWallet/PointWalletDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/Points/PointsDetailDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/Points/PointsDetailDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/Points/PointsHeaderDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/Points/PointsHeaderDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointAllocationRuleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointExpirationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointWalletService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointAllocationRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointExpiration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointWallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointsDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointsHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/PointAllocationRuleResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/PointExpirationResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/PointWalletResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/PointsUsageResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/ServicesRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testdata/CustomerTestDataFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/utils/EmailUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prueba.iml" beforeDir="false" afterPath="$PROJECT_DIR$/prueba.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/Customer/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/Customer/CustomerDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointUseConceptDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointUseConceptDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/FrontEnd/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/CustomerServiceEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/CustomerServiceEJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointAllocationRule/PointAllocationRuleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointAllocationRule/PointAllocationRuleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointAllocationRule/PointAllocationRuleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointAllocationRule/PointAllocationRuleDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointExpiration/PointExpirationDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointExpiration/PointExpirationDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointUseConcept/PointUseConceptDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointUseConcept/PointUseConceptDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointUseConcept/PointUseConceptDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointUseConcept/PointUseConceptDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointWallet/PointWalletDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointWallet/PointWalletDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointWallet/PointWalletDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointWallet/PointWalletDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/Points/PointsDetailDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/Points/PointsDetailDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/CustomerServiceEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointUseConceptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointUseConceptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/SampleEJB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointWalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointWalletService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointExpiration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointExpiration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointUseConcept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointUseConcept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/ClientResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointWallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointWallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointsDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointsDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointsHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointsHeader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/CustomerResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/CustomerResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/HelloResource.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/PointUseConceptResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/PointUseConceptResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/CustomerDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/CustomerDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointUseConceptDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/ejb/CustomerServiceEJB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/ejb/CustomerServiceEJB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/ejb/SampleEJB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/PointWalletResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/PointWalletResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/PointsUsageResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/PointsUsageResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/ServicesRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/ServicesRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointAllocationRule/PointAllocationRuleDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointAllocationRule/PointAllocationRuleDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointAllocationRule/PointAllocationRuleDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointAllocationRule/PointAllocationRuleDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointExpiration/PointExpirationDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointExpiration/PointExpirationDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointUseConcept/PointUseConceptDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointUseConcept/PointUseConceptDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointUseConcept/PointUseConceptDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointUseConcept/PointUseConceptDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointWallet/PointWalletDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointWallet/PointWalletDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointWallet/PointWalletDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/PointWallet/PointWalletDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/Points/PointsDetailDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/dao/Points/PointsDetailDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/ejb/CustomerServiceEJB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/ejb/PointUseConceptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/ejb/PointUseConceptService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/ejb/PointWalletService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/ejb/PointWalletService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/ejb/PointsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/ejb/PointsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/model/PointExpiration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/model/PointExpiration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/model/PointUseConcept.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/model/PointUseConcept.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/ClientResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/CustomerResource$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/CustomerResource$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/model/PointWallet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/model/PointWallet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/model/PointsDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/model/PointsDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/model/PointsHeader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/model/PointsHeader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/CustomerResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/CustomerResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/HelloResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/PointUseConceptResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/PointUseConceptResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/PointWalletResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/PointsUsageResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/PointsUsageResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/ServicesRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/py/com/progweb/prueba/rest/ServicesRest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/prueba.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/prueba.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/CustomerDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/CustomerDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/ejb/CustomerServiceEJB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/ejb/CustomerServiceEJB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/ejb/SampleEJB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/ClientResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/CustomerResource$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/CustomerResource$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/CustomerResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/CustomerResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/HelloResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/cors/CorsFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/Customer/CustomerDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/Customer/CustomerDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/PointAllocationRule/PointAllocationRuleDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/PointAllocationRule/PointAllocationRuleDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/PointExpiration/PointExpirationDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/PointExpiration/PointExpirationDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/PointUseConcept/PointUseConceptDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/PointUseConcept/PointUseConceptDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/PointWallet/PointWalletDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/PointWallet/PointWalletDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/Points/PointsDetailDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/Points/PointsDetailDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/Points/PointsHeaderDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/dao/Points/PointsHeaderDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/ejb/CustomerServiceEJB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/ejb/PointAllocationRuleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/ejb/PointExpirationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/ejb/PointUseConceptService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/ejb/PointWalletService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/ejb/PointsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/exception/DatabaseException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/model/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/model/PointAllocationRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/model/PointExpiration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/model/PointUseConcept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/model/PointWallet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/model/PointsDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/model/PointsHeader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/ApplicationConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/CustomerResource$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/CustomerResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/PointAllocationRuleResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/PointExpirationResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/PointUseConceptResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/PointWalletResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/PointsUsageResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba/WEB-INF/classes/py/com/progweb/prueba/rest/ServicesRest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +146,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "JBoss/WildFly Server.JBoss/WildFly 18.0.1.Final.executor": "Debug",
+    "JBoss/WildFly Server.JBoss/WildFly 18.0.1.Final.executor": "Run",
     "JUnit.CustomerServiceTest.executor": "Run",
     "JUnit.CustomerServiceTest.testCreateValidCustomer.executor": "Run",
     "Maven.prueba [clean,-U].executor": "Run",
@@ -300,7 +320,8 @@
       <updated>1711762271404</updated>
       <workItem from="1711762276978" duration="1727000" />
       <workItem from="1711764042689" duration="4281000" />
-      <workItem from="1711769175766" duration="42526000" />
+      <workItem from="1711769175766" duration="44110000" />
+      <workItem from="1711914901224" duration="19768000" />
     </task>
     <servers />
   </component>
@@ -319,24 +340,34 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/ServicesRest.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/model/PointWallet.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/rest/ServicesRest.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointsService.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointWalletService.java</url>
+          <line>190</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/PointWallet/PointWalletDAOImpl.java</url>
           <line>26</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/ejb/PointsService.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/Points/PointsDetailDAOImpl.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/py/com/progweb/prueba/dao/Points/PointsDetailDAOImpl.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="22" />
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -346,12 +377,6 @@
         <PinnedItemInfo parentTag="org.hibernate.internal.SessionImpl" memberName="persistenceContext" />
       </pinned-members>
     </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="JBossConfiguration">
-        <watch expression="query.getResultList()" language="JAVA" />
-        <watch expression="query" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

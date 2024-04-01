@@ -21,12 +21,12 @@ public class PointUseConceptService {
         return pointUseConceptDAO.update(concept);
     }
 
-    public void delete(Long id) {
+    public void delete(Integer id) {
         pointUseConceptDAO.delete(id);
     }
 
-    public PointUseConcept findById(Long id) {
-        return pointUseConceptDAO.findById(id);
+    public PointUseConcept findById(Integer conceptId) {
+        return pointUseConceptDAO.findById(conceptId);
     }
 
     public List<PointUseConcept> findAll() {

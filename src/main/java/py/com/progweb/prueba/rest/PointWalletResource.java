@@ -25,13 +25,22 @@ public class PointWalletResource {
 
     @GET
     @Path("/{id}")
-    public Response getPointWallet(@PathParam("id") Long id) {
+    public Response getPointWallet(@PathParam("id") Integer id) {
         PointWallet pointWallet = pointWalletService.findById(id);
         if (pointWallet != null) {
             return Response.ok(pointWallet).build();
         } else {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
+    }
+
+    // get all point wallets for a customer by customer id
+
+    @GET
+    @Path("/customer/{customerId}")
+    public Response getPointWalletsByCustomerId(@PathParam("customerId") Integer customerId) {
+        List<PointWallet> pointWallets = pointWalletService.findByCustomerId(customerId);
+        return Response.ok(pointWallets).build();
     }
 
     @GET
@@ -42,7 +51,7 @@ public class PointWalletResource {
 
     @PUT
     @Path("/{id}")
-    public Response updatePointWallet(@PathParam("id") Long id, PointWallet pointWallet) {
+    public Response updatePointWallet(@PathParam("id") Integer id, PointWallet pointWallet) {
         PointWallet existingWallet = pointWalletService.findById(id);
         if (existingWallet == null) {
             return Response.status(Response.Status.NOT_FOUND).build();
@@ -61,7 +70,7 @@ public class PointWalletResource {
 
     @DELETE
     @Path("/{id}")
-    public Response deletePointWallet(@PathParam("id") Long id) {
+    public Response deletePointWallet(@PathParam("id") Integer id) {
         pointWalletService.delete(id);
         return Response.status(Response.Status.NO_CONTENT).build();
     }

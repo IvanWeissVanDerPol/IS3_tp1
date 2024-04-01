@@ -6,7 +6,8 @@ import java.util.List;
 public interface PointWalletDAO {
     void create(PointWallet pointWallet);
     PointWallet update(PointWallet pointWallet);
-    void delete(Long id);
-    PointWallet findById(Long id);
+    void delete(Integer id);
+    PointWallet findById(Integer id);
     List<PointWallet> findAll();
+    List<PointWallet> findAllByCustomerId(Integer customerId);
 }

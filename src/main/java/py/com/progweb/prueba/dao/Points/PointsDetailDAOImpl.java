@@ -5,7 +5,6 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
-import java.util.Date;
 import java.util.List;
 
 @Stateless
@@ -49,7 +48,7 @@ public class PointsDetailDAOImpl implements PointsDetailDAO {
                 "JOIN pd.pointsHeader ph " +
                 "JOIN ph.customer c " +
                 "WHERE c.id = " + customerId.toString() +
-                "AND pd.pointWallet.expirationDate > 1975-04-12 " +
+                "AND pd.pointWallet.expirationDate > " + "CURRENT_DATE " +
                 "AND pd.pointWallet.pointsBalance >= " + pointsToRedeem.toString() +
                 "ORDER BY pd.pointWallet.expirationDate ASC, pd.pointWallet.pointsBalance DESC";
 

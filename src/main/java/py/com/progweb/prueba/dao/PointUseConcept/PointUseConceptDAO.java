@@ -6,7 +6,7 @@ import java.util.List;
 public interface PointUseConceptDAO {
     void create(PointUseConcept concept);
     PointUseConcept update(PointUseConcept concept);
-    void delete(Long id);
-    PointUseConcept findById(Long id);
+    void delete(Integer id);
+    PointUseConcept findById(Integer conceptId);
     List<PointUseConcept> findAll();
 }

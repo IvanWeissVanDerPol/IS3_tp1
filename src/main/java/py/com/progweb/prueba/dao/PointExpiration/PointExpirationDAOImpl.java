@@ -37,6 +37,6 @@ public class PointExpirationDAOImpl implements PointExpirationDAO {
 
     @Override
     public List<PointExpiration> findAll() {
-        return em.createQuery("SELECT p FROM PointExpiration p", PointExpiration.class).getResultList();
+        return em.createQuery("SELECT p FROM PointExpiration as p", PointExpiration.class).getResultList();
     }
 }

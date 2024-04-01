@@ -10,7 +10,7 @@ public class PointsHeader {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "customer_id", referencedColumnName = "id")
@@ -23,19 +23,20 @@ public class PointsHeader {
     @Temporal(TemporalType.TIMESTAMP)
     private Date usageDate;
 
-    @Column(name = "point_use_concept")
-    private String pointUseConcept;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "point_use_concept_id", referencedColumnName = "id")
+    private PointUseConcept pointUseConcept;
 
     @OneToMany(mappedBy = "pointsHeader", cascade = CascadeType.ALL)
     private List<PointsDetail> details;
 
     // Getters and Setters
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -43,9 +44,7 @@ public class PointsHeader {
         return customer.getId();
     }
 
-    public void setCustomerId(Integer customerId) {
-        this.customer.setId(customerId);
-    }
+    public void setCustomerId(Integer customerId) {this.customer.setId(customerId);}
 
     public Integer getPointsUsed() {
         return pointsUsed;
@@ -63,13 +62,22 @@ public class PointsHeader {
         this.usageDate = usageDate;
     }
 
-    public String getPointUseConcept() {
+    public Integer getPointUseConcept_Id() {
+        return pointUseConcept.getId();
+    }
+
+    public void setPointUseConcept_Id(Integer pointUseConcept) {
+        this.pointUseConcept.setId(pointUseConcept);;
+    }
+
+    public PointUseConcept getPointUseConcept() {
         return pointUseConcept;
     }
 
-    public void setPointUseConcept(String pointUseConcept) {
-        this.pointUseConcept = pointUseConcept;
+    public void setPointUseConcept(PointUseConcept pointUseConcept) {
+        this.pointUseConcept =  pointUseConcept;
     }
+
 
     public List<PointsDetail> getDetails() {
         return details;
@@ -77,5 +85,13 @@ public class PointsHeader {
 
     public void setDetails(List<PointsDetail> details) {
         this.details = details;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Customer getCustomer() {
+        return customer;
     }
 }

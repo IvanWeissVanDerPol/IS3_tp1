@@ -1,5 +1,7 @@
 package py.com.progweb.prueba.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -9,17 +11,19 @@ public class PointWallet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @Column(name = "customer_id")
-    private Long customerId;
+    private Integer customerId;
 
     @Column(name = "assignment_date")
     @Temporal(TemporalType.DATE)
-    private Date assignmentDate;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    private Date assignmentDate = new Date();
 
     @Column(name = "expiration_date")
     @Temporal(TemporalType.DATE)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date expirationDate;
 
     @Column(name = "assigned_points")
@@ -34,21 +38,38 @@ public class PointWallet {
     @Column(name = "transaction_amount")
     private Double transactionAmount;
 
+
+    // Constructors
+
+    public PointWallet() {
+    }
+
+    public PointWallet(Integer customerId, Integer assignedPoints,Date expirationDate) {
+        this.customerId = customerId;
+        this.assignedPoints = assignedPoints;
+        this.pointsBalance = assignedPoints;
+        this.transactionAmount = (double) 0;
+        this.assignmentDate = new Date();
+        // calculate expiration date based on the point expiration rule
+        // if the current date is between the start and end date of the rule, the expiration date is the current date plus the rule's validity period
+        this.expirationDate = expirationDate;
+        this.usedPoints = 0;
+    }
     // Getters and setters
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public Long getCustomerId() {
+    public Integer getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(Long customerId) {
+    public void setCustomerId(Integer customerId) {
         this.customerId = customerId;
     }
 
@@ -131,4 +152,15 @@ public class PointWallet {
         result = 31 * result + customerId.hashCode();
         return result;
     }
+
+//    public Customer getCustomer() {
+//        CustomerService customerService = new CustomerService();
+//        return customerService.findCustomerById(this.customerId);
+//
+//    }
+
+
+
+
+    
 }

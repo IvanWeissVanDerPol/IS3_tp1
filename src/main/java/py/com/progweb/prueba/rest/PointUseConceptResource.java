@@ -25,7 +25,7 @@ public class PointUseConceptResource {
 
     @GET
     @Path("/{id}")
-    public Response getPointUseConceptById(@PathParam("id") Long id) {
+    public Response getPointUseConceptById(@PathParam("id") Integer id) {
         PointUseConcept concept = pointUseConceptService.findById(id);
         if (concept != null) {
             return Response.ok(concept).build();
@@ -53,7 +53,7 @@ public class PointUseConceptResource {
 
     @DELETE
     @Path("/{id}")
-    public Response deletePointUseConcept(@PathParam("id") Long id) {
+    public Response deletePointUseConcept(@PathParam("id") Integer id) {
         pointUseConceptService.delete(id);
         return Response.status(Response.Status.NO_CONTENT).build();
     }

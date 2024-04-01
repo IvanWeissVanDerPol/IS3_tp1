@@ -22,11 +22,13 @@ public class PointWalletDAOImpl implements PointWalletDAO {
 
     @Override
     public PointWallet update(PointWallet pointWallet) {
-        return em.merge(pointWallet);
+        PointWallet updatedPointWallet = em.merge(pointWallet);
+        em.flush(); // Ensure changes are persisted.
+        return updatedPointWallet;
     }
 
     @Override
-    public void delete(Long id) {
+    public void delete(Integer id) {
         PointWallet pointWallet = findById(id);
         if (pointWallet != null) {
             em.remove(pointWallet);
@@ -34,12 +36,19 @@ public class PointWalletDAOImpl implements PointWalletDAO {
     }
 
     @Override
-    public PointWallet findById(Long id) {
+    public PointWallet findById(Integer id) {
         return em.find(PointWallet.class, id);
     }
 
     @Override
     public List<PointWallet> findAll() {
         return em.createQuery("SELECT p FROM PointWallet p", PointWallet.class).getResultList();
+    }
+
+    @Override
+    public List<PointWallet> findAllByCustomerId(Integer customerId) {
+        return em.createQuery("SELECT p FROM PointWallet p WHERE p.customerId = :customerId AND p.expirationDate >= CURRENT_DATE", PointWallet.class)
+                .setParameter("customerId", customerId)
+                .getResultList();
     }
 }

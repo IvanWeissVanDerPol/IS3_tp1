@@ -59,7 +59,8 @@ public class PointExpiration {
         this.durationDays = durationDays;
     }
 
-    // toString Method for logging and debugging purposes
+
+
 
     @Override
     public String toString() {

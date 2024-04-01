@@ -9,7 +9,7 @@ public class PointsDetail {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "header_id", referencedColumnName = "id")
@@ -28,20 +28,28 @@ public class PointsDetail {
     }
 
     // Getters and setters
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public PointsHeader getPointsHeader() {
+    public PointsHeader getPointsHeader_Id() {
         return pointsHeader;
+    }
+
+    public void setPointsHeader_Id(Integer pointsHeader_id) {
+        this.pointsHeader.setId(pointsHeader_id);;
     }
 
     public void setPointsHeader(PointsHeader pointsHeader) {
         this.pointsHeader = pointsHeader;
+    }
+
+    public PointsHeader getPointsHeader() {
+        return pointsHeader;
     }
 
     public Integer getPointsUsed() {
@@ -52,11 +60,11 @@ public class PointsDetail {
         this.pointsUsed = pointsUsed;
     }
 
-    public Long getPointWallet() {
+    public Integer getPointWallet_Id() {
         return pointWallet.getId();
     }
 
-    public void setPointWallet(Long pointsWalletId) {
+    public void setPointWallet_Id(Integer pointsWalletId) {
         this.pointWallet.setId(pointsWalletId);
     }
 
@@ -68,6 +76,14 @@ public class PointsDetail {
     }
 
     public void setPointsRemaining(int remainingPoints) {
+    }
+
+    public void setPointWallet(PointWallet pointWallet) {
+        this.pointWallet = pointWallet;
+    }
+
+    public PointWallet getPointWallet() {
+        return pointWallet;
     }
 
     // Override toString, equals and hashCode methods if necessary

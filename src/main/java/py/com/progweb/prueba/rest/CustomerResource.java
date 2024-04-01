@@ -1,6 +1,6 @@
 package py.com.progweb.prueba.rest;
 
-import py.com.progweb.prueba.ejb.CustomerServiceEJB;
+import py.com.progweb.prueba.ejb.CustomerService;
 import py.com.progweb.prueba.model.Customer;
 
 import javax.inject.Inject;
@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class CustomerResource {
 
     @Inject
-    private CustomerServiceEJB customerService;
+    private CustomerService customerService;
 
 
     @POST

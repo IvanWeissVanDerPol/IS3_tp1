@@ -18,6 +18,7 @@ C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progw
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\model\PointUseConcept.java
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\dao\Points\PointsDetailDAOImpl.java
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\rest\ApplicationConfig.java
+C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\utils\EmailUtils.java
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\dao\PointUseConcept\PointUseConceptDAO.java
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\ejb\PointsService.java
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\model\PointsHeader.java
@@ -29,9 +30,9 @@ C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progw
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\dao\PointAllocationRule\PointAllocationRuleDAO.java
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\ejb\PointWalletService.java
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\dao\PointUseConcept\PointUseConceptDAOImpl.java
+C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\ejb\CustomerService.java
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\rest\PointAllocationRuleResource.java
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\dao\Customer\CustomerDAOImpl.java
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\dao\Points\PointsDetailDAO.java
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\rest\PointUseConceptResource.java
 C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\dao\PointWallet\PointWalletDAOImpl.java
-C:\Users\WEISSIVA\Documents\FPUNA\backend\TP1\IS3_tp1\src\main\java\py\com\progweb\prueba\ejb\CustomerServiceEJB.java

@@ -23,7 +23,7 @@ public class PointUseConceptDAOImpl implements PointUseConceptDAO {
     }
 
     @Override
-    public void delete(Long id) {
+    public void delete(Integer id) {
         PointUseConcept concept = findById(id);
         if (concept != null) {
             em.remove(concept);
@@ -31,7 +31,7 @@ public class PointUseConceptDAOImpl implements PointUseConceptDAO {
     }
 
     @Override
-    public PointUseConcept findById(Long id) {
+    public PointUseConcept findById(Integer id) {
         return em.find(PointUseConcept.class, id);
     }
 
